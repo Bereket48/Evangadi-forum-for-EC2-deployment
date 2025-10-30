@@ -1,0 +1,197 @@
+.ask_container {
+  background: linear-gradient(rgba(153, 174, 232, 0.5), rgba(209, 116, 4, 0.5)),
+    /* black overlay */
+      url(https://png.pngtree.com/background/20210715/original/pngtree-abstract-technology-concept-design-of-wire-mesh-picture-image_1303432.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 5vh 0;
+}
+
+/* Main content styling */
+.postQuestionContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  backdrop-filter: blur(25px);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.postQuestionContainer h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: rgb(65, 92, 211);
+  margin-bottom: 10px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+
+
+.postQuestionContainer h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.ask_container .steps h1 {
+  font-family: Poppins;
+  color: #000;
+  font-size: 1.3rem;
+}
+
+.ask_container > h1 {
+  color: #cc0000;
+}
+/* Form elements */
+.postQuestionForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.postQuestionForm input[type="text"],
+.postQuestionForm textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  background: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.postQuestionForm input[type="text"]:focus,
+.postQuestionForm textarea:focus {
+  border-color: #0077ff;
+  box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.1);
+  outline: none;
+}
+
+/* Button */
+.postQuestionForm button {
+  background-color: #ff9100;
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.postQuestionForm button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.postQuestionForm button:hover:not(:disabled) {
+  background-color: #e6860a;
+  transform: scale(1.02);
+}
+
+.required {
+  color: red;
+  margin-left: 0.2rem;
+}
+
+.error {
+  color: #b00020;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.success {
+  color: #007700;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+/* Select box */
+.selectbox {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid rgb(201, 201, 201);
+  border-radius: 8px;
+  background-color: transparent;
+  color: #333;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+}
+
+.selectbox:focus {
+  outline: none;
+  border-color: #415cd3;
+  background-color: #f5f8ff;
+}
+
+ul li {
+  margin-left: 10px;
+}
+
+/* Steps section */
+.steps {
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 16px;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.steps h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.steps ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  color: black;
+  line-height: 1.7;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .postQuestionContainer {
+    padding: 25px 20px;
+  }
+  .postQuestionContainer h1 {
+    font-size: 1.6em;
+  }
+}
+
+@media (max-width: 480px) {
+  .postQuestionContainer {
+    padding: 20px 15px;
+  }
+  .postQuestionContainer h1 {
+    font-size: 1.3em;
+  }
+}
